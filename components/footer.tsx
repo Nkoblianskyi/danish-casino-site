@@ -39,32 +39,50 @@ export default function Footer() {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center p-6 bg-gray-800/30 rounded-lg border border-gray-700/50 shadow-lg w-full md:w-auto  mx-4">
+              <div className="flex flex-col items-center p-6 bg-gray-800/30 border border-gray-700/50 shadow-lg w-full md:w-auto mx-4">
                 <p className="text-white font-bold mb-6 text-center text-xl md:text-2xl">Ansvarligt Spil</p>
-                <div className="flex space-x-10 items-center justify-center w-full">
+                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-10 items-center justify-center w-full">
                   <Link
                     href="https://www.stopspillet.dk"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-800 hover:bg-gray-700 p-4 transition-all transform hover:scale-110 shadow-md"
+                    className="bg-gray-800 hover:bg-gray-700 p-4 transition-all transform hover:scale-110 shadow-md w-full md:w-auto"
                   >
-                    <Image src="/stopspillet.png" alt="StopSpillet" width={48} height={48} className="w-32 h-12" />
+                    <Image
+                      src="/stopspillet.png"
+                      alt="StopSpillet"
+                      width={128}
+                      height={48}
+                      className="w-full h-12 object-contain"
+                    />
                   </Link>
                   <Link
-                    href="https://www.rofus.nu"
+                    href="https://www.spillemyndigheden.dk/rofus#ROFUS/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-800 hover:bg-gray-700 p-4  transition-all transform hover:scale-110 shadow-md"
+                    className="bg-gray-800 hover:bg-gray-700 p-4 transition-all transform hover:scale-110 shadow-md w-full md:w-auto"
                   >
-                    <Image src="/rofus.png" alt="ROFUS" width={48} height={48} className="w-32 h-12" />
+                    <Image
+                      src="/rofus.png"
+                      alt="ROFUS"
+                      width={86}
+                      height={48}
+                      className="w-full h-12 object-contain"
+                    />
                   </Link>
                   <Link
                     href="https://www.ludomani.dk"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-800 hover:bg-gray-700 p-4 transition-all transform hover:scale-110 shadow-md"
+                    className="bg-gray-800 hover:bg-gray-700 p-4 transition-all transform hover:scale-110 shadow-md w-full md:w-auto"
                   >
-                    <Image src="/ludomani.png" alt="Ludomani" width={48} height={48} className="w-32 h-12" />
+                    <Image
+                      src="/ludomani.png"
+                      alt="Ludomani"
+                      width={128}
+                      height={48}
+                      className="w-full h-12 object-contain"
+                    />
                   </Link>
                 </div>
               </div>
@@ -171,7 +189,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="https://www.rofus.nu"
+                      href="https://www.spillemyndigheden.dk/rofus#ROFUS/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-white text-sm flex items-center group"

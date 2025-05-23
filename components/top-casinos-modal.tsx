@@ -54,13 +54,13 @@ export default function TopCasinosModal({ casinos }: TopCasinosModalProps) {
                 )}
 
                 <div className="flex items-center gap-2 md:gap-4">
-                  <div className="flex-shrink-0 w-12 md:w-20">
+                  <div className="flex-shrink-0 w-14 md:w-20">
                     <Image
                       src={casino.logo || `/placeholder.svg?height=60&width=120&query=${casino.name} logo`}
                       alt={casino.name}
                       width={120}
-                      height={60}
-                      className="h-8 md:h-12 w-auto object-contain"
+                      height={120}
+                      className="h-16 md:h-24 w-auto object-contain"
                     />
                   </div>
 

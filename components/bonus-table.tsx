@@ -43,9 +43,9 @@ export default function BonusTable({ casinos }: BonusTableProps) {
                     <Image
                       src={casino.logo || `/placeholder.svg?height=80&width=160&query=${casino.name} logo`}
                       alt={casino.name}
-                      width={160}
-                      height={80}
-                      className="h-10 md:h-20 w-auto object-contain"
+                      width={180}
+                      height={100}
+                      className="h-18 md:h-24 w-auto object-contain"
                     />
                   </div>
 

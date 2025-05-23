@@ -26,7 +26,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <section className="relative min-h-[calc(50vh-80px)] md:min-h-[calc(60vh-100px)] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[260px] max-h-[260px] flex items-center justify-center overflow-hidden">
         {/* Background video/image */}
         <div className="absolute inset-0 z-0">
           <div
@@ -39,55 +39,50 @@ export default function HeroSection() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 text-center px-2 md:px-4 max-w-5xl mx-auto py-4 md:py-8">
+        <div className="relative z-20 text-center px-2 md:px-4 max-w-5xl mx-auto py-4">
           <div
-            className={`mb-3 md:mb-6 bg-black/30 backdrop-blur-sm rounded-lg p-3 md:p-8 ${
-              isLoaded ? "animate-fadeIn" : "opacity-0"
-            }`}
+            className={`bg-black/30 backdrop-blur-sm rounded-lg p-3 md:p-6 ${isLoaded ? "animate-fadeIn" : "opacity-0"
+              }`}
           >
-            <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-white glow-text animate-pulse-slow">
+            <h1 className="text-xl md:text-3xl font-bold mb-1 md:mb-2 text-white glow-text animate-pulse-slow">
               De Bedste Online Casinoer i Danmark
             </h1>
             <p
-              className="text-base md:text-xl text-gray-300 mb-1 md:mb-2 animate-slideInRight"
+              className="text-sm md:text-base text-gray-300 mb-1 animate-slideInRight"
               style={{ animationDelay: "0.2s" }}
             >
               Opdateret til {currentDate}
             </p>
             <p
-              className="text-sm md:text-lg text-gray-400 mb-3 md:mb-6 max-w-3xl mx-auto animate-slideInLeft"
+              className="text-xs md:text-sm text-gray-400 mb-2 md:mb-4 max-w-3xl mx-auto animate-slideInLeft"
               style={{ animationDelay: "0.3s" }}
             >
-              Velkommen til Danmarks mest pålidelige guide til online casinoer. Vi har testet og anmeldt de bedste
-              danske casinosider, så du kan spille sikkert med de mest fordelagtige bonusser og vilkår.
+              Velkommen til Danmarks mest pålidelige guide til online casinoer med de bedste bonusser og vilkår.
             </p>
 
             <button
               onClick={scrollToTable}
-              className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold py-2 md:py-3 px-4 md:px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/50 mb-3 md:mb-8 animate-float btn-pulse text-sm md:text-base"
+              className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold py-1 md:py-2 px-3 md:px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/50 mb-1 md:mb-2 animate-float btn-pulse text-xs md:text-sm"
             >
               Se Top Bonusser
-              <ChevronDown className="inline ml-2 w-4 h-4 md:w-5 md:h-5" />
+              <ChevronDown className="inline ml-1 w-3 h-3 md:w-4 md:h-4" />
             </button>
 
             {/* Responsible gambling footer */}
-            <div
-              className="text-[10px] md:text-sm text-gray-400 space-y-1 md:space-y-2 animate-slideInUp"
-              style={{ animationDelay: "0.5s" }}
-            >
-              <div className="flex flex-wrap justify-center items-center gap-1 md:gap-4">
+            <div className="text-[8px] md:text-xs text-gray-400 animate-slideInUp" style={{ animationDelay: "0.5s" }}>
+              <div className="flex flex-wrap justify-center items-center gap-1 md:gap-2">
                 <button
                   onClick={() => setShowGamalyzeModal(true)}
-                  className="text-blue-400 hover:text-blue-300 underline transition-colors text-[10px] md:text-sm"
+                  className="text-blue-400 hover:text-blue-300 underline transition-colors text-[8px] md:text-xs"
                 >
                   Test dig selv med Gamalyze
                 </button>
                 <span className="hidden md:inline">|</span>
                 <button
                   onClick={() => setShowResponsibleModal(true)}
-                  className="text-blue-400 hover:text-blue-300 underline transition-colors text-[10px] md:text-sm"
+                  className="text-blue-400 hover:text-blue-300 underline transition-colors text-[8px] md:text-xs"
                 >
-                  18+ | Spil ansvarligt! | Regler og vilkår gælder
+                  18+ | Spil ansvarligt!
                 </button>
               </div>
             </div>

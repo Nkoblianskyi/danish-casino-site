@@ -39,7 +39,7 @@ export default function TopCasinosModal({ casinos }: TopCasinosModalProps) {
         </button>
 
         <div className="p-3 md:p-4">
-          <h2 className="text-lg md:text-xl font-bold text-center mb-3 text-white">Top 3 Casinoer</h2>
+          <h2 className="text-lg md:text-xl font-bold text-center mb-3 text-white">Top Casinoer</h2>
 
           <div className="space-y-2">
             {topCasinos.map((casino, index) => (
@@ -88,7 +88,7 @@ export default function TopCasinosModal({ casinos }: TopCasinosModalProps) {
           </div>
 
           <p className="text-[8px] md:text-[10px] text-gray-400 mt-2 text-center">
-            * = reklamelinks | 18+ | Spil ansvarligt
+            | 18+ | Spil ansvarligt
           </p>
         </div>
       </div>

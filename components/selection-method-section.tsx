@@ -6,7 +6,7 @@ export default function SelectionMethodSection() {
     <section className="py-6 md:py-16 bg-gray-900">
       <div className="container mx-auto px-2 md:px-4">
         <h2 className="text-xl md:text-3xl font-bold text-center mb-4 md:mb-12 animate-fadeIn">
-          Sådan Udvælger Vi De Bedste Casinoer 🎯
+          Sådan Udvælger Vi De Bedste Casinoer
         </h2>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">

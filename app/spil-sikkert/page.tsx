@@ -49,7 +49,7 @@ export default function PlaySafelyPage() {
         </p>
         <div className="my-6">
           <Link
-            href="https://www.rofus.nu"
+            href="https://www.spillemyndigheden.dk/rofus#ROFUS/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md inline-flex items-center"

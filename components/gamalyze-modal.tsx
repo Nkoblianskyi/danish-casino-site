@@ -58,17 +58,6 @@ export default function GamalyzeModal({ isOpen, onClose }: GamalyzeModalProps) {
               så mange gange, du ønsker.
             </p>
           </div>
-
-          <div className="text-center animate-slideInUp" style={{ animationDelay: "0.7s" }}>
-            <a
-              href="https://www.gamalyze.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md inline-block transition-all hover:scale-105 btn-pulse"
-            >
-              Start Gamalyze Test
-            </a>
-          </div>
         </div>
       </div>
     </div>

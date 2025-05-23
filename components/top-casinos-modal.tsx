@@ -28,7 +28,7 @@ export default function TopCasinosModal({ casinos }: TopCasinosModalProps) {
   const topCasinos = casinos.slice(0, 3)
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/80 animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/20 animate-fadeIn">
       <div className="bg-gray-900 border border-gray-800 rounded-lg shadow-2xl w-full max-w-sm md:max-w-lg relative">
         <button
           onClick={() => setIsOpen(false)}
@@ -39,7 +39,7 @@ export default function TopCasinosModal({ casinos }: TopCasinosModalProps) {
         </button>
 
         <div className="p-3 md:p-6">
-          <h2 className="text-lg md:text-2xl font-bold text-center mb-3 md:mb-4 text-white">Top 3 Casinoer</h2>
+          <h2 className="text-lg md:text-2xl font-bold text-center mb-3 md:mb-4 text-white">Top Casinoer</h2>
 
           <div className="space-y-2 md:space-y-4">
             {topCasinos.map((casino, index) => (

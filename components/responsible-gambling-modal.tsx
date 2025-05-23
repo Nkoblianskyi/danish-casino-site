@@ -71,7 +71,7 @@ export default function ResponsibleGamblingModal({ isOpen, onClose }: Responsibl
 
           <div className="animate-slideInLeft" style={{ animationDelay: "0.4s" }}>
             <h3 className="text-lg font-bold text-white mb-3">Vigtige Links</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Link
                   href="https://www.stopspillet.dk"
@@ -82,7 +82,7 @@ export default function ResponsibleGamblingModal({ isOpen, onClose }: Responsibl
                   → StopSpillet.dk
                 </Link>
                 <Link
-                  href="https://www.rofus.nu"
+                  href="https://www.spillemyndigheden.dk/rofus#ROFUS/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-blue-400 hover:text-blue-300 transition-colors hover:translate-x-1 inline-block"
@@ -98,14 +98,6 @@ export default function ResponsibleGamblingModal({ isOpen, onClose }: Responsibl
                   className="block text-blue-400 hover:text-blue-300 transition-colors hover:translate-x-1 inline-block"
                 >
                   → Ludomani.dk
-                </Link>
-                <Link
-                  href="https://www.gamalyze.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-blue-400 hover:text-blue-300 transition-colors hover:translate-x-1 inline-block"
-                >
-                  → Gamalyze Test
                 </Link>
               </div>
             </div>
